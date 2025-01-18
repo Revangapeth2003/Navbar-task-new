@@ -22,12 +22,12 @@ const Navbar = () => {
       <div>
         <ul
           className={`${isMenuOpen ? "block" : "hidden"} 
-        flex flex-col md:flex-row  `}
+        flex flex-row md:block  `}
         >
-          <li className="mr-6">Home</li>
-          <li className="mr-6">Contact</li>
-          <li className="mr-6">About</li>
-          <li className="mr-6">SignIn</li>
+          <li className="mr-2 md:mr-8">Home</li>
+          <li className="mr-2 md:mr-8">Contact</li>
+          <li className="mr-2 md:mr-8">About</li>
+          <li className="mr-2 md:mr-8">SignIn</li>
         </ul>
       </div>
     </div>
