@@ -20,6 +20,8 @@ const Navbar = () => {
         </button>
       </div>
       <div>
+        {/* parent : inline-block
+            child : inline */}
         <ul
           className={`${isMenuOpen ? "block" : "hidden"} 
         flex md:inline-block  `}
