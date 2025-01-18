@@ -7,7 +7,7 @@ const Navbar = () => {
   const ToggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className="container flex flex-col md:flex-row justify-between p-8 bg-slate-300 min-w-full">
+    <div className="container flex flex-col md:flex-row justify-between p-8 inline bg-slate-300 min-w-full">
       <div>
         <h1 className="text-2xl font-bold">Header</h1>
       </div>
@@ -22,12 +22,12 @@ const Navbar = () => {
       <div>
         <ul
           className={`${isMenuOpen ? "block" : "hidden"} 
-        flex flex-row md:block  `}
+        flex md:inline-block  `}
         >
-          <li className="mr-2 md:mr-8">Home</li>
-          <li className="mr-2 md:mr-8">Contact</li>
-          <li className="mr-2 md:mr-8">About</li>
-          <li className="mr-2 md:mr-8">SignIn</li>
+          <li className="mr-2 md:mr-8 inline">Home</li>
+          <li className="mr-2 md:mr-8 inline">Contact</li>
+          <li className="mr-2 md:mr-8 inline">About</li>
+          <li className="mr-2 md:mr-8 inline">SignIn</li>
         </ul>
       </div>
     </div>
